@@ -1,0 +1,8 @@
+name: feature-engineering
+description: Performs the IOB preprocessing.
+implementation:
+  container:
+    image: docker.io/ritaban/train-housing-poc:latest
+    command: [
+      python3, /pipelines/components/src/component-train.py,
+    ]
